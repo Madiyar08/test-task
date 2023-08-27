@@ -1,0 +1,118 @@
+.App{
+  background-image: url(./images/main.png);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  cursor: pointer;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1380px;
+  height: 44px;
+  padding:30px 30px 0 30px;
+  border-bottom: 1px solid  #ffffff8e;
+}
+
+.contacts{
+  display: flex;
+  align-items: center;
+}
+.social-icons{
+  border-left: 1px solid  #ffffff8e;
+  border-right: 1px solid  #ffffff8e;
+}
+.phone-number{
+  margin-left: 25px;
+  font-size: 18px;
+  
+}
+.social-icon{
+  display:inline-block;
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.brochure{
+  display: inline-block;
+  position: absolute;
+  bottom:0;   
+  left: 0;
+  margin: 0  0 60px 40px;
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  padding: 10px 20px;
+}
+.brochure span{
+  text-transform: uppercase;
+   font-size: 16px;
+   color: #fff;
+   margin-right: 15px;
+}
+.brochure:hover{
+  cursor: pointer;
+  
+}
+/* ------------------------------------------- */
+.map{
+  position: relative;
+}
+.map span{
+  margin: 0 5px;
+}
+.mark{
+  color: black;
+  background-color: #fff;
+  padding: 1px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.apartments, .park, .mansions, .road{
+  padding: 1px;
+  color: #fff;
+  background-color: black;
+}
+.apartments, .park, .mansions, .road:hover{
+  cursor: pointer;
+}
+.apartments{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left:52%;
+  top: 110px;
+}
+.mansions{
+  position: absolute;
+  left: 10%;
+  top: 370px;
+}
+.road{
+  position: absolute;
+  right: 25%;
+  top: 500px;
+}
+.park{
+  position: absolute;
+  top: 350px;
+  left: 35%;
+}
+
+
+.iframe{
+  width:90%; 
+  height: 500px;
+  display:block; 
+  margin:20px auto; 
+  border:0 none; 
+  max-width:880px;
+  border-radius:8px; 
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+}
