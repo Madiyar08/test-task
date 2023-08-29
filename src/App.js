@@ -76,12 +76,26 @@ function App() {
             <span>Park</span>
           </div>
 
-          <div onClick={() => toggleVr(setOpenMansionVr)} className="mansions">
+          <div
+          style={{
+            display:
+              open || openParkVr || openMansionVr || openRoadVr || showOffer
+                ? "none"
+                : "block",
+          }}
+          onClick={() => toggleVr(setOpenMansionVr)} className="mansions">
             <span className="mark">M1</span>
             <span>Mainsons</span>
           </div>
 
-          <div onClick={() => toggleVr(setOpenRoadVr)} className="road">
+          <div
+          style={{
+            display:
+              open || openParkVr || openMansionVr || openRoadVr || showOffer
+                ? "none"
+                : "block",
+          }}
+           onClick={() => toggleVr(setOpenRoadVr)} className="road">
             <span className="mark">R1</span>
             <span>Road</span>
           </div>
@@ -137,6 +151,7 @@ function App() {
         </div>
 
         <div
+        
           className="panorama"
           style={{ display: openMansionVr ? "block" : "none" }}
         >
@@ -202,7 +217,7 @@ function App() {
           <img src={arrow} alt="arrow" />
         </div>
 
-        <div className="offer" style={{ display: showOffer ? "block" : "none" }}>
+        <div className="offer" style={{ display: showOffer ? "flex" : "none" }}>
           <div className="offer-unique">
             <h2 className="unique-offer">Don't Miss The Unique Offer</h2>
             <p>
